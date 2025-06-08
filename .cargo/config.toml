@@ -3,3 +3,7 @@ target = "aarch64-unknown-none"
 
 [target.aarch64-unknown-none]
 runner = "echo 'This is a kernel, not a user program'"
+
+[unstable]
+build-std-features = ["compiler-builtins-mem"]
+build-std = ["core", "compiler_builtins"]
